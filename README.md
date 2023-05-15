@@ -36,6 +36,8 @@ git branch -M main  # Creazione del branch main, da usare come default
 git remote add origin https://github.com/<username>/Esercitazione16maggio  # Connessione del repository remoto al repository locale
 git push -u origin main  # Sincronizzazione del repository remoto con quello locale
 ```
+Nel caso in cui appaia questa finestra ![](credential.png) selezionare `manager-ui`.
+
 ## Aggiunta di nuovi file al repository
 1. Creare un nuovo file `main.c` nel workspace
 2. Implementare un programma che, dati in input 10 numeri positivi, trovi il massimo e lo visualizzi a video
