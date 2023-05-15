@@ -3,10 +3,15 @@ Introduzione a git
 
 ## PortableGit
 Scaricare l'ultima versione di PortableGit: https://github.com/git-for-windows/git/releases/
+
 ![](PortableGit.png)
+
 Eseguire il file exe scaricato.
+
 ![](exe.png)
+
 Aprire il programma `git-bash` nella cartella di PortableGit appena creata.
+
 ![](git-bash.png)
 
 ## Creazione progetto
@@ -23,8 +28,12 @@ Salvare il file.
 ### Creazione repository su Github
 - Aprire il sito github.com
 - Effettuare il login
-- Cliccare su `New` ![](newRepo.png)
-- Creare un nuovo repository `Esercitazione16maggio`, prestando attenzione a non creare un Readme di default ![](repo.png)
+- Cliccare su `New`
+
+![](newRepo.png)
+- Creare un nuovo repository `Esercitazione16maggio`, prestando attenzione a non creare un Readme di default.
+
+![](repo.png)
 
 ### Configurazione del repository locale e sincronizzazione
 Da `git-bash` eseguire i seguenti comandi:
@@ -36,7 +45,11 @@ git branch -M main  # Creazione del branch main, da usare come default
 git remote add origin https://github.com/<username>/Esercitazione16maggio  # Connessione del repository remoto al repository locale
 git push -u origin main  # Sincronizzazione del repository remoto con quello locale
 ```
-Nel caso in cui appaia questa finestra ![](credential.png) selezionare `manager-ui`.
+Nel caso in cui appaia questa finestra
+
+![](credential.png) 
+
+selezionare `manager-ui`.
 
 ## Aggiunta di nuovi file al repository
 1. Creare un nuovo file `main.c` nel workspace
