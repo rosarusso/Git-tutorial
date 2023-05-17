@@ -51,7 +51,7 @@ Nel caso in cui appaia questa finestra
 
 selezionare `manager-ui`.
 
-Nel caso, invece, in cui il comando `push` non dovesse andare a buon fine a causa di problemi con l'autenticazione, eseguire questi passi:
+Nel caso, invece, in cui il comando `push` non dovesse andare a buon fine a causa di problemi con l'autenticazione, è stato configurato un account globale, pertanto bisogna eseguire questi passi:
 - aprire il seguente link https://github.com/settings/tokens
 - generare un token mediante `Generate new token (classic)`
 - confermare l'accesso inserendo la propria password, se richiesto
@@ -62,6 +62,9 @@ Nel caso, invece, in cui il comando `push` non dovesse andare a buon fine a caus
 
 ![](token.jpg)
 
+Dopodiché, eseguire nuovamente il comando `push` usando il seguente formato:
+``` git push https://<username>:<token>@github.com/<username>/<reponame>.git ```
+dove `<username>` è il vostro username, al posto di `<token>` bisogna inserire il token creato prima e `<reponame>` è il nome del repository sul quale si vuole effettuare il `push` (in questo caso, `<reponame>` è `Git-tutorial`).
 
 ## Aggiunta di nuovi file al repository
 1. Creare un nuovo file `main.c` nel workspace
