@@ -51,6 +51,18 @@ Nel caso in cui appaia questa finestra
 
 selezionare `manager-ui`.
 
+Nel caso, invece, in cui il comando `push` non dovesse andare a buon fine a causa di problemi con l'autenticazione, eseguire questi passi:
+- aprire il seguente link https://github.com/settings/tokens
+- generare un token mediante `Generate new token (classic)`
+- confermare l'accesso inserendo la propria password, se richiesto
+- in `Note` inserire un messaggio come "token di accesso"
+- `Expiration`: "No expiration"
+- In `Select scopes` spuntare la casella accanto a `repo`, in modo tale da avere la situazione sottostante
+- generare il token e salvarlo in un file di testo
+
+![](token.jpg)
+
+
 ## Aggiunta di nuovi file al repository
 1. Creare un nuovo file `main.c` nel workspace
 2. Implementare un programma che, dati in input 10 numeri positivi, trovi il massimo e lo visualizzi a video
