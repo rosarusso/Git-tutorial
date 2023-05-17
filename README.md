@@ -63,9 +63,9 @@ Nel caso, invece, in cui il comando `push` non dovesse andare a buon fine a caus
 ![](token.jpg)
 
 Dopodiché, eseguire nuovamente il comando `push` usando il seguente formato:
-
-``` git push https://<username>:<token>@github.com/<username>/<reponame>.git ```
-
+```
+git push https://<username>:<token>@github.com/<username>/<reponame>.git
+```
 dove `<username>` è il vostro username, al posto di `<token>` bisogna inserire il token creato prima e `<reponame>` è il nome del repository sul quale si vuole effettuare il `push` (in questo caso, `<reponame>` è `Git-tutorial`).
 
 ## Aggiunta di nuovi file al repository
